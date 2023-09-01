@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Meu projeto Bootstrap</title>
+
+    <!-- nome do autor -->
+    <meta name="author" content="Alex Machado Ribeiro" />
+
+    <!-- indexação dos mecanismos de busca -->
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="senai, alex, machado, ribeiro, front-end, front, end, programação, programacao, programaçao, programacão, curso, sig, bootstrap, resposnivo, nav, navbar, menu, carrosel, carousel" />
+    <meta name="description" content="Esta página é um teste feito com Boostrap." />
+
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- Meu CSS -->
+    <link href="css/estilos.css" rel="stylesheet" type="text/css" />
+
+    <!-- favicon -->
+    <link href="imagens/icon.png" rel="shortcut icon" type="image/png" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark menu-borda" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="imagens/icon.png" alt="Bootstrap" width="30" height="24">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Cadastro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="conceitos.html">Conceitos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!-- fim do navbar -->
+
+    <!-- formulário -->
+    <main class="mt-5">
+        <div class="container">
+            <h1>Formulário de cadastro</h1>
+            <hr />
+            <form action="" method="">
+                <section class="row mt-5">
+                    <h2>Dados pessoais</h2>
+                    <hr />
+                    <!-- nome -->
+                    <div class="col-md-5 col-12">
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Seu primeiro nome">
+                          </div>
+                    </div>
+                    <!-- sobrenome -->
+                    <div class="col-md-7 col-12">
+                        <div class="mb-3">
+                            <label for="sobrenome" class="form-label">Sobrenome</label>
+                            <input type="text" class="form-control" id="sobrenome" placeholder="Seu sobrenome completo">
+                          </div>
+                    </div>
+                    <!-- e-mail -->
+                    <div class="col-md-8 col-12">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="email" placeholder="usuario@servidor.com">
+                          </div>
+                    </div>
+                    <!-- data de nascimento -->
+                    <div class="col-md-4 col-12">
+                        <div class="mb-3">
+                            <label for="dataNasc" class="form-label">Data de nascimento</label>
+                            <input type="date" class="form-control" id="dataNasc" />
+                          </div>
+                    </div>
+                    <!-- telefone -->
+                    <div class="col-md-3 col-12">
+                        <div class="mb-3">
+                            <label for="telefone" class="form-label">Telefone</label>
+                            <input type="tel" class="form-control" id="telefone" placeholder="(ddd) 9xxxx-xxxx" />
+                          </div>
+                    </div>
+                    <!-- rg -->
+                    <div class="col-md-3 col-12">
+                        <div class="mb-3">
+                            <label for="rg" class="form-label">RG</label>
+                            <input type="text" class="form-control" id="rg" placeholder="Registro Geral" />
+                          </div>
+                    </div>
+                    <!-- cpf -->
+                    <div class="col-md-3 col-12">
+                        <div class="mb-3">
+                            <label for="cpf" class="form-label">CPF</label>
+                            <input type="text" class="form-control" id="cpf" placeholder="CPF" />
+                          </div>
+                    </div>
+                    <!-- genero -->
+                    <div class="col-md-3 col-12">
+                        <div class="mb-3">
+                            <label for="genero" class="form-label">Gênero</label>
+                            <select class="form-select" aria-label="Default select example" id="genero">
+                                <option selected value="masculino">Masculino</option>
+                                <option value="feminino">Feminino</option>
+                                <option value="Não desejo informar">Não desejo informar</option>
+                              </select>
+                          </div>
+                    </div>
+                </section>
+                <!-- endereço -->
+                <section class="row mt-5">
+                  <h2>Endereço</h2>
+                  <hr />
+                  <!-- cep -->
+                  <div class="col-md-3 col-12">
+                    <div class="mb-3">
+                      <label for="cep" class="form-label">CEP</label>
+                      <input type="text" class="form-control" id="cep" placeholder="xx.xxx-xxx" />
+                    </div>
+                  </div>
+                  <!-- estado -->
+                  <div class="col-md-1 col-12">
+                    <div class="mb-3">
+                      <label for="uf" class="form-label">UF</label>
+                      <input type="text" class="form-control" id="uf" placeholder="UF" />
+                    </div>
+                  </div>
+                  <!-- cidade -->
+                  <div class="col-md-4 col-12">
+                    <div class="mb-3">
+                      <label for="cidade" class="form-label">Cidade</label>
+                      <input type="text" class="form-control" id="cidade" placeholder="Cidade" />
+                    </div>
+                  </div>
+                  <!-- bairro -->
+                  <div class="col-md-4 col-12">
+                    <div class="mb-3">
+                      <label for="bairro" class="form-label">Bairro</label>
+                      <input type="text" class="form-control" id="bairro" placeholder="Bairro" />
+                    </div>
+                  </div>
+                  <!-- logradouro -->
+                  <div class="col-md-9 col-12">
+                    <div class="mb-3">
+                      <label for="logradouro" class="form-label">Logradouro</label>
+                      <input type="text" class="form-control" id="logradouro" placeholder="Logradouro" />
+                    </div>
+                  </div>
+                  <!-- número -->
+                  <div class="col-md-3 col-12">
+                    <div class="mb-3">
+                      <label for="numero" class="form-label">Número</label>
+                      <input type="text" class="form-control" id="numero" placeholder="Número" />
+                    </div>
+                  </div>
+                  <!-- complemento -->
+                  <div class="col-12">
+                    <div class="mb-3">
+                      <label for="complemento" class="form-label">Complemento</label>
+                      <input type="text" class="form-control" id="complemento" placeholder="Complemento" />
+                    </div>
+                  </div>
+                </section>
+                <!-- termos de condições e uso -->
+                <div class="col-12 mt-3 mb-5">
+                  <input type="checkbox" id="termos" />
+                  <span>
+                     Li e aceito os 
+                     <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        Termos de condições e uso
+                     </a>
+                      do sistema.
+                  </span>
+
+                  <!-- Modal -->
+                  <div class="modal fade modal-xl" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                            Termos de condições e uso
+                          </h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <p>
+                            1º - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere quia excepturi beatae corrupti quisquam natus neque aspernatur cumque, perspiciatis quis velit nostrum explicabo at aperiam optio pariatur inventore sapiente delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae facilis, dolorem obcaecati porro quaerat nam natus a culpa repellendus, aliquid laborum labore minima voluptate molestias totam, vitae repellat vel eos!
+                          </p>
+                          <p>
+                            2º - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit fugit autem dignissimos, iusto eum assumenda sequi consectetur dolore vel quos deleniti ipsum maiores eveniet est voluptatem sit exercitationem expedita fugiat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab maxime, explicabo culpa repellendus illum eos ullam rerum assumenda sequi molestiae, aliquam similique ratione placeat iure harum labore unde, quos doloremque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis incidunt, at sequi eius rerum vitae. Repellat aliquam corporis neque maxime, unde, numquam quis molestiae possimus iusto, error eius commodi labore!
+                          </p>
+                          <p>
+                            3º - Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus id eum placeat aut sapiente alias vitae, dignissimos quia non quae dicta odit perspiciatis nemo accusamus, molestiae voluptatum tenetur totam dolorem?
+                          </p>
+                          <p>
+                            4º - Aceito vender a minha alma.
+                          </p>
+                          <p>
+                            5º Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus accusantium, illum sint harum reiciendis hic iusto ratione exercitationem aspernatur cupiditate? Pariatur, ducimus. Animi quo modi minus velit atque temporibus dicta! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam exercitationem officiis necessitatibus, recusandae minima architecto rem delectus quam. Suscipit accusamus ipsam aperiam quaerat praesentium, in delectus quae necessitatibus dignissimos officia? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id minima suscipit a est, modi expedita consectetur beatae iusto placeat quasi, sed possimus exercitationem maiores repudiandae necessitatibus excepturi at deleniti ad! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore laudantium natus quaerat doloribus dignissimos quas obcaecati non laborum cumque aliquid, architecto laboriosam quo, ut tempora officiis facere suscipit, odio quisquam!
+                          </p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- fim do modal -->
+
+                </div>
+                <!-- botão -->
+                <div class="col-md-3 col-12">
+                  <button type="submit" class="btn btn-primary mt-5">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <!-- fim do formulário -->
+
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <p class="col-md-4 mb-0 text-body-secondary">© 2023 Company, Inc</p>
+      
+          <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <!-- <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg> -->
+            <img src="imagens/icon.png" alt="Bootstrap" width="30" height="24">
+          </a>
+      
+          <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+          </ul>
+        </footer>
+      </div>
+    </footer>
+    <!-- fim do footer -->
+
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <!-- meu js -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
